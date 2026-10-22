@@ -53,7 +53,7 @@ https://<用户名>.github.io/<仓库名>/
 
 - 论文插图从 `Frontiermmc2026/Zhou2025PartA.pdf` 按页码和 trim 视窗裁剪，300 dpi 渲染后压缩为 PNG。
 - 其他插图由 `Frontiermmc2026/figures/` 中的 JPG/PNG 统一转为 PNG。
-- 二维码由 LaTeX `qrcode` 宏包生成，指向个人主页。
+- 二维码由 LaTeX `qrcode` 宏包生成，指向报告网页。
 - 页面不依赖外部字体或 JS，可直接静态托管。
 
 ## 说明

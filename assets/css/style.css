@@ -214,9 +214,53 @@ main {
 
 .section h3 {
   margin: 30px 0 10px;
+  padding-left: 12px;
+  border-left: 4px solid var(--blue-3);
   color: var(--blue);
   font-size: 1.13rem;
   line-height: 1.45;
+}
+
+/* Section dividers */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 24px;
+  padding: 20px 24px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #14205a 0%, #283593 100%);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(26, 35, 126, .16);
+}
+
+.divider-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .26);
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 750;
+  flex: 0 0 auto;
+}
+
+.divider-text h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  line-height: 1.35;
+}
+
+.divider-text p {
+  margin: 4px 0 0;
+  color: #dbe4ff;
+  font-size: .88rem;
+  line-height: 1.5;
 }
 
 .section h3:first-of-type { margin-top: 20px; }
@@ -555,6 +599,8 @@ footer {
   .contact-grid { grid-template-columns: 1fr; }
   .awards-grid { grid-template-columns: 1fr; }
   .awards-grid img { height: auto; max-height: 520px; }
+  .section-divider { padding: 16px 18px; gap: 12px; }
+  .divider-index { width: 40px; height: 40px; font-size: .9rem; }
   .qr { text-align: left; }
 }
 
