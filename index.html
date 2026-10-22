@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>金属基复合材料制备技术及液相法的工艺实践 | 周计明</title>
+  <meta name="description" content="金属基复合材料制备技术及液相法的工艺实践：液相浸渗、间接挤压成形、预制体设计与界面调控。周计明，西北工业大学。">
+  <meta name="author" content="周计明">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">报告网页版 · 2026 年 10 月 24 日</p>
+    <h1>金属基复合材料制备技术<br>及液相法的工艺实践</h1>
+    <p class="hero-sub">从液相浸渗到间接挤压成形：工艺、组织与性能</p>
+    <div class="hero-meta">
+      <span>周计明</span>
+      <span>西北工业大学</span>
+      <span>2026 年 10 月 24 日</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn" href="#abstract">阅读摘要</a>
+      <a class="btn btn-ghost" href="assets/Frontiermmc2026-30min.pdf" target="_blank" rel="noopener">下载报告 PDF</a>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="页面导航">
+  <div class="toc-inner">
+    <a href="#abstract">摘要</a>
+    <a href="#overview">概述与应用</a>
+    <a href="#fabrication">制备技术</a>
+    <a href="#infiltration">液相浸渗</a>
+    <a href="#interface">预制体与界面</a>
+    <a href="#conclusion">结论与成果</a>
+    <a href="#references">参考文献</a>
+    <a href="#contact">联系</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="section" id="abstract">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2>摘要</h2>
+    </div>
+    <p class="lead">
+      金属基复合材料兼具金属的塑韧性与增强相的高强度、高模量、低热膨胀等特性，在航空航天、汽车、电子、国防和体育等领域具有广阔应用前景。本报告概述金属基复合材料的制备工艺分类，重点介绍液相法制备技术及本课题组在真空吸渗、合金液定量浇注、间接挤压成形、预制体微结构设计和界面调控方面的研究实践。
+    </p>
+    <p>
+      通过环形预制体、间接挤压和连续层间合金设计，CF/Al 环件致密度达到 <strong>99.5%</strong>，拉伸强度和剪切强度分别提高 <strong>15%</strong> 和 <strong>17%</strong>，拉伸/剪切能量吸收分别提高 <strong>98%</strong> 和 <strong>73%</strong>。报告还讨论工艺—组织—性能关系及工程应用前景。
+    </p>
+    <div class="keywords">
+      <span>金属基复合材料</span>
+      <span>液相浸渗</span>
+      <span>间接挤压</span>
+      <span>CF/Al</span>
+      <span>预制体设计</span>
+      <span>界面调控</span>
+    </div>
+  </section>
+
+  <section class="section" id="overview">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2>概述与典型应用</h2>
+    </div>
+    <p>
+      金属基复合材料（MMC）由金属基体与纤维、颗粒或晶须等增强相复合而成，兼具金属的塑韧性和增强相的高强度、高模量、耐磨、低热膨胀等优点。寻找<strong>低成本、高效率、高性能</strong>的制备方法，是该领域共同追求的目标。
+    </p>
+
+    <figure>
+      <img src="assets/images/process-route.png" alt="金属基复合材料常用制备工艺路线" loading="lazy" decoding="async">
+      <figcaption><strong>图 1</strong>　金属基复合材料常用制备工艺路线：液相法、固相法、半固态法、气相沉积法和原位制备法等。</figcaption>
+    </figure>
+
+    <h3>典型应用与性能需求</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>典型零部件</th>
+            <th>性能要求</th>
+            <th>复材体系</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>汽车发动机缸体</td><td>高温强度、耐磨、抗疲劳</td><td>SiC<sub>p</sub>/Al、SiC<sub>w</sub>/Al、Al<sub>2</sub>O<sub>3</sub>/Al</td></tr>
+          <tr><td>刹车制动钳</td><td>高刚度、耐磨</td><td>SiC<sub>p</sub>/Al、3M Nextel/Al</td></tr>
+          <tr><td>风扇出口导向叶片</td><td>高温强度、抗蠕变、高刚度</td><td>SiC<sub>p</sub>/Al</td></tr>
+          <tr><td>导弹尾翼</td><td>高温强度及高模量</td><td>3M Nextel/Al</td></tr>
+          <tr><td>坦克履带</td><td>高强、轻质、耐磨</td><td>SiC/Al</td></tr>
+          <tr><td>卫星桁架</td><td>高刚度、高强度、低膨胀</td><td>B/Al、SiC<sub>w</sub>/Al、SiC<sub>p</sub>/Al</td></tr>
+          <tr><td>波导天线桅杆</td><td>高导热、高导电</td><td>Gr/Al、B/Al、Gr/Mg、SiC<sub>p</sub>/Al</td></tr>
+          <tr><td>热管理元件基板</td><td>高导热、低膨胀</td><td>B/Al、SiC<sub>p</sub>/Al</td></tr>
+          <tr><td>高尔夫球杆</td><td>高刚度、高强度、耐磨</td><td>SiC<sub>p</sub>/Al、C<sub>f</sub>/Al、C<sub>f</sub>/Mg</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">表 1　金属基复合材料典型应用及性能要求。</p>
+    <p class="muted">
+      金属基复合材料目前仍具有“小众材料”的特征：性能可设计、但成本高于常规金属，工程应用通常需要针对具体场景提供“额外性能”。
+    </p>
+  </section>
+
+  <section class="section" id="fabrication">
+    <div class="section-head">
+      <span class="section-index">03</span>
+      <h2>制备技术</h2>
+    </div>
+
+    <h3>搅拌铸造法</h3>
+    <p>
+      将增强相加入金属熔体，通过机械搅拌分散后浇注成形。工艺简单、成本低，适合颗粒或短纤维增强；主要难点是增强相的润湿、团聚与分散控制。
+    </p>
+    <figure>
+      <img src="assets/images/stir-casting.png" alt="搅拌铸造法的工艺原理" loading="lazy" decoding="async">
+      <figcaption><strong>图 2</strong>　搅拌铸造法的工艺原理：增强相加入坩埚，通过搅拌器在金属熔体中分散后浇注。</figcaption>
+    </figure>
+
+    <h3>快速混合工艺</h3>
+    <p>
+      MC-21 公司开发的快速混合工艺通过特殊流场实现颗粒的快速分散与均匀混合，已用于 Al-SiC 复合材料的规模化生产。Al-SiC 复合材料具有优异的力学与热学性能，可用于 IGBT 基板、刹车盘、装甲和体育用品等。
+    </p>
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/rapid-mixing.png" alt="MC-21 快速混合工艺" loading="lazy" decoding="async">
+        <figcaption><strong>图 3</strong>　MC-21 公司开发的快速混合工艺。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/golf-club.png" alt="Al-SiC 复合材料高尔夫球杆" loading="lazy" decoding="async">
+        <figcaption><strong>图 4</strong>　Al-SiC MMC 在体育用品中的应用：高尔夫球杆（Fat Eddie Driver），比刚度高于钛合金。</figcaption>
+      </figure>
+    </div>
+
+    <h3>喷射共沉积法</h3>
+    <p>
+      金属液被雾化成细小液滴，与增强颗粒同时喷射沉积到基板上，快速凝固可避免宏观偏析。该工艺综合了粉末冶金与铸造的特点，但沉积坯中通常存在 <strong>15%–20%</strong> 的孔隙，需要后续致密化。
+    </p>
+    <figure>
+      <img src="assets/images/spray-deposition.png" alt="喷射沉积法的原理" loading="lazy" decoding="async">
+      <figcaption><strong>图 5</strong>　喷射沉积法的原理：合金液雾化液滴与增强相颗粒同时沉积到基板上。</figcaption>
+    </figure>
+
+    <h3>MetPreg 金属预浸料</h3>
+    <p>
+      MetPreg 是 Touchstone Research Laboratory 开发的金属预浸料技术，以连续氧化铝纤维增强铝基复合带材的形式供货，可进行铺放、缠绕、热压和真空袋成形。
+    </p>
+    <p>
+      缠绕或铺放时，带材表面的低熔点钎料涂层在搭接点被<strong>激光局部熔化</strong>，压辊随即压实，完成层间连接；若使用裸带，则局部熔化铝基体表面。该过程不是整体重熔，纤维和大部分铝基体仍保持固态。
+    </p>
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/metpreg-tape.png" alt="MetPreg 带材制备流程" loading="lazy" decoding="async">
+        <figcaption><strong>图 6</strong>　MetPreg 带材制备：纤维束 → 金属浸渗 → 成形模 → 冷却 → 收卷。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/metpreg-winding.png" alt="MetPreg 激光辅助缠绕" loading="lazy" decoding="async">
+        <figcaption><strong>图 7</strong>　激光辅助缠绕：钎料涂层局部熔化 + 压辊压实，属于原位局部连接而非整体重熔。</figcaption>
+      </figure>
+    </div>
+    <p>
+      技术来源：<a href="https://www.metpreg.com/" target="_blank" rel="noopener">Touchstone Research Laboratory 开发技术（metpreg.com）</a>。
+    </p>
+  </section>
+
+  <section class="section" id="infiltration">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2>液相浸渗工艺实践</h2>
+    </div>
+    <p>
+      液相浸渗是本课题组长期研究重点：通过真空、压力和温度控制，使金属液克服毛细阻力进入预制体，获得致密、界面结合良好的金属基复合材料。研究对象覆盖真空吸渗液固挤压、合金液定量浇注和间接挤压成形。
+    </p>
+
+    <h3>真空吸渗与合金液定量浇注</h3>
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/vacuum-infiltration.png" alt="真空吸渗液固挤压工艺原理" loading="lazy" decoding="async">
+        <figcaption><strong>图 8</strong>　真空吸渗液固挤压工艺原理：浸渗前抽真空，减小孔洞和预制体背压，高压下凝固以提高致密性。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/quantitative-pouring.png" alt="气压式合金液定量输送原理" loading="lazy" decoding="async">
+        <figcaption><strong>图 9</strong>　气压式合金液定量输送：气压驱动、升液管输送、阀控自回流，实现镁液的连续定量浇注。</figcaption>
+      </figure>
+    </div>
+
+    <h3>间接挤压（IE）新工艺</h3>
+    <p>
+      大型 CF/Al 环件成形面临模具尺寸限制、浸渗距离长、预制体变形、纤维团聚和浸渗不均等挑战。传统直接挤压（DE）中，纤维间距小、层间合金不足、孔洞多，容易发生脆性断裂。
+    </p>
+    <p>
+      IE 采用环形预制体 + 凹模/冲头结构，使合金液从预制体侧面和层间逐步浸渗。典型工艺参数为：模具预热 <strong>550 °C</strong>，ZL111 合金熔炼 <strong>760 °C</strong>，分级加压至 <strong>40 MPa</strong> 并保压约 <strong>5 min</strong>。
+    </p>
+    <figure>
+      <img src="assets/images/ie-process.png" alt="间接挤压成形装备与工艺流程" loading="lazy" decoding="async">
+      <figcaption><strong>图 10</strong>　间接挤压成形装备与工艺流程：成形装备、工艺示意及关键成形步骤。</figcaption>
+    </figure>
+
+    <h3>预制体结构与成形质量</h3>
+    <p>
+      预制体采用 T700-12K 单向碳布，共 16 层，单层厚度约 0.33 mm，逐层铺叠并用穿刺技术防止分层。环形预制体的中心孔可避免氧化膜直接接触预制体底部；圆形预制体则通过钢/石墨支撑板夹层抑制变形。
+    </p>
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/preform-design.png" alt="碳布切割模板与不同结构预制体" loading="lazy" decoding="async">
+        <figcaption><strong>图 11</strong>　碳布切割模板与不同结构预制体：环形、圆形、钢支撑板夹层和石墨支撑板夹层。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/forming-quality.png" alt="不同预制体的成形质量" loading="lazy" decoding="async">
+        <figcaption><strong>图 12</strong>　不同预制体的成形质量：(a) 环形预制体；(b) 圆形预制体；(c) 石墨板夹层；(d) 不锈钢板夹层。</figcaption>
+      </figure>
+    </div>
+    <p>
+      环形预制体浸渗完整、无纤维裸露；圆形预制体中心纤维裸露约 <strong>22%</strong>、弯曲角约 <strong>5.3°</strong>；石墨板夹层去板后纤维裸露约 <strong>75%</strong>、弯曲角约 <strong>7.9°</strong>；钢板夹层中心浸渗不足、弯曲角约 <strong>9.3°</strong>。最终 IE 工艺采用环形预制体，成形质量最好。
+    </p>
+
+    <h3>浸渗组织与致密度</h3>
+    <p>
+      IE 过程中，合金液先充填碳布层间，再逐步渗入纤维束内部，形成连续的“纤维层—合金层”层状结构。DE 的层间合金不连续，孔洞和未浸渗区较多。
+    </p>
+    <figure>
+      <img src="assets/images/infiltration-microstructure.png" alt="IE-CF/Al 环件浸渗组织" loading="lazy" decoding="async">
+      <figcaption><strong>图 13</strong>　IE-CF/Al 环件不同位置的浸渗组织：纤维束浸渗充分，层间合金连续。</figcaption>
+    </figure>
+    <div class="stats">
+      <div class="stat"><b>99.5%</b><span>IE 环件致密度</span></div>
+      <div class="stat"><b>0.5%</b><span>IE 孔隙率（DE 为 23.5%）</span></div>
+      <div class="stat"><b>26.6%</b><span>IE 纤维体积分数</span></div>
+      <div class="stat"><b>76.5% → 99.5%</b><span>DE → IE 致密度</span></div>
+    </div>
+
+    <h3>力学性能与失效机制</h3>
+    <div class="stats">
+      <div class="stat"><b>172.1 MPa</b><span>IE 抗拉强度（DE 149.6 MPa，+15%）</span></div>
+      <div class="stat"><b>89.7 MPa</b><span>IE 层间剪切强度（DE 76.8 MPa，+17%）</span></div>
+      <div class="stat"><b>+97.9%</b><span>拉伸能量吸收（0.0241→0.0476 J/mm³）</span></div>
+      <div class="stat"><b>+72.9%</b><span>剪切能量吸收（0.0199→0.0344 J/mm³）</span></div>
+    </div>
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/tensile-properties.png" alt="DE 与 IE 的拉伸性能" loading="lazy" decoding="async">
+        <figcaption><strong>图 14</strong>　DE 与 IE-CF/Al 的拉伸性能：(a) 应力—应变曲线；(b) 抗拉强度对比。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/tensile-fracture.png" alt="DE 与 IE 的拉伸断口形貌" loading="lazy" decoding="async">
+        <figcaption><strong>图 15</strong>　拉伸断口形貌：(a)(b) DE-CF/Al，(c)(d) IE-CF/Al。IE 呈阶梯状断口，伴随纤维拔出、脱粘和分级断裂。</figcaption>
+      </figure>
+    </div>
+    <p>
+      IE 在较低纤维体积分数（26.6%）下仍具有更高的强度和韧性：连续层间合金使裂纹偏转、钝化，铝基体的塑性变形吸收能量；DE 则因层间合金不连续、纤维间距小，裂纹沿纤维—合金—纤维路径扩展，断口平直、呈脆性断裂。
+    </p>
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/shear-properties.png" alt="DE 与 IE 的剪切性能" loading="lazy" decoding="async">
+        <figcaption><strong>图 16</strong>　DE 与 IE-CF/Al 的剪切性能：(a) 剪切应力—应变曲线；(b) 层间剪切强度对比。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/shear-fracture.png" alt="CF/Al 剪切断口形貌与失效特征" loading="lazy" decoding="async">
+        <figcaption><strong>图 17</strong>　剪切断口形貌：(a) 观察位置；(b)(c) DE-CF/Al；(d)(e) IE-CF/Al。IE 出现裂纹偏转、脱粘、纤维拔出和基体撕裂。</figcaption>
+      </figure>
+    </div>
+    <div class="callout">
+      <p><strong>结论：</strong>连续层间合金、裂纹偏转、分级断裂和纤维拔出，是 IE 环件同步提高强度、塑性和能量吸收的关键。</p>
+    </div>
+  </section>
+
+  <section class="section" id="interface">
+    <div class="section-head">
+      <span class="section-index">05</span>
+      <h2>预制体与界面调控</h2>
+    </div>
+    <p>
+      预制体微结构设计从“均匀分布”逐步走向“梯度分布、定制分布”，目标是根据构件受力与功能需求实现性能定制。课题组围绕短纤维、碳纳米管、多尺度和石墨烯等增强体系持续开展研究。
+    </p>
+
+    <h3>研究脉络</h3>
+    <ul class="timeline">
+      <li>
+        <span class="year">2006</span><span class="project">轻质高性能 Csf/Mg 复合材料固-液高压渗挤近终成形技术</span>
+        <span class="grant">国家自然科学基金 50575185 · 2006.01–2008.12 · 短纤维增强</span>
+      </li>
+      <li>
+        <span class="year">2013</span><span class="project">复合外场诱导有序定域增强 CNTs/Mg 复杂构件一体化成形技术基础研究</span>
+        <span class="grant">国家自然科学基金 51275417 · 2013.01–2016.12 · 碳纳米管增强</span>
+      </li>
+      <li>
+        <span class="year">2016</span><span class="project">CNTs 接枝 Cf 增强镁基复合材料制备及强韧化机理研究</span>
+        <span class="grant">国家自然科学基金 51575447 · 2016.01–2019.12 · 多尺度增强</span>
+      </li>
+      <li>
+        <span class="year">2023</span><span class="project">3D 打印石墨烯微构型增强镁基复合材料性能调控机制</span>
+        <span class="grant">国家自然科学基金 52231004 · 2023.1–2027.12 · 石墨烯微结构定制增强</span>
+      </li>
+      <li>
+        <span class="year">2025</span><span class="project">石墨烯增强镁基复合材料电磁浸渗制备工艺探索与成形机理</span>
+        <span class="grant">国家自然科学基金 52475405 · 2025.1–2028.12 · 石墨烯预制体浸渗</span>
+      </li>
+    </ul>
+
+    <h3>碳纤维表面涂层与 CNT 接枝</h3>
+    <p>
+      为改善碳纤维与铝/镁基体的润湿性和界面结合，课题组发展了 PyC、PyC/SiC 等表面涂层，以及电泳沉积（EPD）和 CVD 接枝碳纳米管等界面调控方法。EPD 与 CVD 可在纤维表面构建多尺度增强结构，形成“纤维—CNT—基体”的层级界面。
+    </p>
+
+    <figure>
+      <img src="assets/images/cnt-coating.png" alt="碳纤维表面涂层与 CNT 接枝" loading="lazy" decoding="async">
+      <figcaption><strong>工艺：</strong>碳纤维表面涂层与 CNT 接枝：(a) PyC 涂层；(b) PyC/SiC 复合涂层；(c) 接枝 CNT。</figcaption>
+    </figure>
+
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/cnt-epd-process.png" alt="电泳沉积接枝碳纳米管原理" loading="lazy" decoding="async">
+        <figcaption><strong>EPD 工艺：</strong>电泳沉积接枝 CNT 的原理及复合材料制备流程。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/cnt-epd-morphology.png" alt="电泳时间对 CNT 形貌的影响" loading="lazy" decoding="async">
+        <figcaption><strong>EPD 结果：</strong>电泳时间对 CNT 形貌的影响（20 s / 40 s / 60 s）。</figcaption>
+      </figure>
+    </div>
+
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/cnt-cvd-process.png" alt="CVD 接枝碳纳米管工艺装置" loading="lazy" decoding="async">
+        <figcaption><strong>CVD 工艺：</strong>CVD 接枝 CNT 的工艺装置。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/cnt-cvd-route.png" alt="CVD 接枝碳纳米管工艺路线" loading="lazy" decoding="async">
+        <figcaption><strong>CVD 工艺：</strong>纤维布除胶、催化剂负载和 CNT 生长路线。</figcaption>
+      </figure>
+    </div>
+
+    <div class="figure-grid">
+      <figure>
+        <img src="assets/images/cnt-cvd-surface.png" alt="CVD 接枝后纤维表面 CNT 分布" loading="lazy" decoding="async">
+        <figcaption><strong>CVD 结果：</strong>纤维表面 CNT 分布。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/cnt-cvd-matrix.png" alt="CVD 接枝后基体中 CNT 分布" loading="lazy" decoding="async">
+        <figcaption><strong>CVD 结果：</strong>基体中 CNT 分布。</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      EPD 适合在纤维表面均匀沉积 CNT；CVD 接枝的 CNT 与纤维表面结合更强，可形成更稳定的“纤维—CNT—基体”多尺度界面。
+    </p>
+
+    <figure>
+      <img src="assets/images/cnt-performance.png" alt="接枝碳纳米管对金属基复合材料性能的影响" loading="lazy" decoding="async">
+      <figcaption><strong>图 18</strong>　接枝碳纳米管对镁基复合材料性能的影响：接枝 CNT 的复合材料抗拉强度提高约 28.3%。</figcaption>
+    </figure>
+    <div class="callout">
+      <p><strong>思路：</strong>通过预制体结构设计和界面调控，把“增强相分布”和“界面结合强度”同时纳入工艺设计，实现强度、塑性与功能性能的协同。</p>
+    </div>
+  </section>
+
+  <section class="section" id="conclusion">
+    <div class="section-head">
+      <span class="section-index">06</span>
+      <h2>结论与成果</h2>
+    </div>
+    <h3>间接挤压成形小结</h3>
+    <ul class="clean">
+      <li>提出间接挤压（IE）新工艺，解决大型 CF/Al 环件的模具尺寸、预制体变形、纤维团聚和浸渗不均等问题。</li>
+      <li>IE 环件致密度达到 <strong>99.5%</strong>，孔隙率降至 <strong>0.5%</strong>；拉伸强度提高 <strong>15%</strong>，剪切强度提高 <strong>17%</strong>。</li>
+      <li>拉伸/剪切能量吸收分别提高 <strong>98%</strong> 和 <strong>73%</strong>；连续层间合金、裂纹偏转、分级断裂和纤维拔出是强韧化关键。</li>
+    </ul>
+    <div class="callout">
+      <p><strong>IE 工艺展望：</strong>优化装备与工艺参数，制备更大尺寸、更高性能的环件；加强 Al<sub>4</sub>C<sub>3</sub> 界面反应控制和工程应用验证。</p>
+    </div>
+
+    <h3>成果及获奖</h3>
+    <div class="awards-grid">
+      <figure>
+        <img src="assets/images/award-book.png" alt="专著《液固高压成形技术与应用》" loading="lazy" decoding="async">
+        <figcaption>专著《液固高压成形技术与应用》。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/award-national.png" alt="国家技术发明奖二等奖证书" loading="lazy" decoding="async">
+        <figcaption>国家技术发明奖二等奖证书。</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/award-provincial.png" alt="陕西省自然科学奖一等奖证书" loading="lazy" decoding="async">
+        <figcaption>陕西省自然科学奖一等奖证书（2024）。</figcaption>
+      </figure>
+    </div>
+
+    <h3>总体结论与展望</h3>
+    <ul class="clean">
+      <li>金属基复合材料应用前景广阔，但工程化道路仍然漫长。</li>
+      <li>工艺过程精确控制是高性能金属基复合材料制备和分析的前提条件，<strong>真空、高温、压力</strong>三者尤为重要。</li>
+      <li>复合材料<strong>微结构设计与相应工艺方法的开发</strong>是未来金属基复合材料研究的重要方向。</li>
+      <li>重视研究成果的推广应用，使科研成果能更早落地、服务社会。</li>
+    </ul>
+  </section>
+
+  <section class="section" id="references">
+    <div class="section-head">
+      <span class="section-index">07</span>
+      <h2>参考文献</h2>
+    </div>
+    <p class="muted">以下为 30 分钟版报告引用的文献（共 13 条），按作者字母顺序排列。完整引用格式与上下文见报告 PDF。</p>
+    <ol class="refs-list">
+<li>Gupta, M. and Nai Mui Ling Sharon (2010). Magnesium, Magnesium Alloys and Magnesium Composites. John Wiley &amp; Sons, Inc.</li>
+      <li>Haibo, O., Hejun, L., Lehua, Q., Zhengjia, L., Jian, W., and Jianfeng, W. (2008). Synthesis of a silicon carbide coating on carbon fibers by deposition of a layer of pyrolytic carbon and reacting it with silicon monoxide. Carbon, 46(10):1339 – 1344.</li>
+      <li>Li, H., Ouyang, H., Qi, L., Zhang, Y., Li, Z., and Wei, J. (2010). Effect of temperature on the synthesis of sic coating on carbon fibers by the reaction of sio with the deposited pyrolytic carbon layer. Journal of Materials Science &amp; Technology, 26(3):211 – 216.</li>
+      <li>Michael D. Skibo, David M. Schuster, and La Jolla (2000). Preparation of metal matrix composites under atmospheric pressure.</li>
+      <li>Qi, L., Ju, L., Zhou, J., Li, S., Zhang, T., and Tian, W. (2017). Tensile and fatigue behavior of carbon fiber reinforced magnesium composite fabricated by liquid-solid extrusion following vacuum pressure infiltration. Journal of Alloys and Compounds, 721(Supplement C):55 – 63.</li>
+      <li>White, J. and Willis, T. (1989). The production of metal matrix composites by spray deposition. Materials &amp; Design, 10(3):121–127.</li>
+      <li>Zhang, T., Qi, L., Fu, J., Chao, X., Li, W., and Li, H. (2019a). Microstructure and thermal expansion behavior of a novel cf-sicnws/az91d composite with dual interface. Ceramics International, 45(9):12563 – 12569.</li>
+      <li>Zhang, T., Qi, L., Fu, J., Zhou, J., and Chao, X. (2019b). Effect of sic nanowires addition on the interfacial microstructure and mechanical properties of the cf-sicnws/az91d composite. Journal of Alloys and Compounds, 776:746 – 756.</li>
+      <li>Zhou, J., Bai, Y., Li, X., and Qi, L. (2025). Enhanced strength and toughness of continuous carbon fiber reinforced aluminum matrix composite ring component prepared by indirect extrusion. Composites Part A: Applied Science and Manufacturing, 194:108931.</li>
+      <li>Zhou, J., Yuan, M., Li, Z., Meng, H., Zhang, T., and Qi, L. (2019a). A great improvement of tensile properties of cf/az91d composite through grafting cnts onto the surface of the carbon fibers. Materials Science and Engineering: A, 762:138061.</li>
+      <li>Zhou, J. M., Meng, H. M., Han, L. J., and Qi, L. H. (2019b). Mechanical properties of cnts-grafted carbon fiber/magnesium composites prepared by liquid-solid infiltration extrusion. In Semi-Solid of Alloys and Composites XV, volume 285 of Solid State Phenomena, pages 121–126. Trans Tech Publications.</li>
+      <li>Zhou, J. M., Qi, L. H., Ouyang, H. B., and Li, H. J. (2010). Mechanical properties of csf/az91d composites fabricated by extrusion forming process directly following the vacuum infiltration. In THERMEC 2009 Supplement, volume 89 of Advanced Materials Research, pages 692–696. Trans Tech Publications.</li>
+      <li>周计明;孟海明;齐乐华 (2018). 一种翻转式真空压力近净成型镁基复合材料的装置及方法.</li>
+    </ol>
+    <p><a class="btn" href="assets/ref.bib" download>下载 BibTeX（ref.bib）</a></p>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-head">
+      <span class="section-index">08</span>
+      <h2>联系与资料</h2>
+    </div>
+    <p class="thanks">感谢大家聆听！</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <p><strong>周计明</strong>　西北工业大学</p>
+        <p>邮箱：<a href="mailto:zhoujm@nwpu.edu.cn">zhoujm@nwpu.edu.cn</a></p>
+        <p>个人主页：<a href="https://kivinchoa.github.io/kivinInfo/index.html" target="_blank" rel="noopener">kivinchoa.github.io/kivinInfo</a></p>
+        <p>本网页根据 2026 年 10 月 24 日报告整理。完整幻灯片与参考文献请下载报告 PDF。</p>
+        <p><a class="btn" href="assets/Frontiermmc2026-30min.pdf" target="_blank" rel="noopener">下载报告 PDF</a></p>
+      </div>
+      <div class="qr">
+        <a href="https://kivinchoa.github.io/kivinInfo/index.html" target="_blank" rel="noopener">
+          <img src="assets/images/qr.png" alt="个人主页二维码" loading="lazy" decoding="async">
+        </a>
+        <p>扫码访问个人主页</p>
+      </div>
+    </div>
+
+    <figure class="campus">
+      <img src="assets/images/campus.png" alt="西北工业大学长安校区东大门里，何尊组雕和水上图书馆" loading="lazy" decoding="async">
+      <figcaption>西北工业大学长安校区东大门里，何尊组雕和水上图书馆。</figcaption>
+    </figure>
+
+    <a class="top-link" href="#top">↑ 返回顶部</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 周计明 · 西北工业大学</span>
+    <span>金属基复合材料制备技术及液相法的工艺实践</span>
+  </div>
+</footer>
+
+</body>
+</html>
