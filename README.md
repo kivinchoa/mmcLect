@@ -2,10 +2,12 @@
 
 《金属基复合材料制备技术及液相法的工艺实践》静态网页，入口为 `index.html`。
 
+远程仓库 `mmcLect` 的根目录即站点根目录。
+
 ## 目录结构
 
 ```text
-docs/
+./
 ├── index.html                      # 网页入口
 ├── .nojekyll                       # GitHub Pages 不启用 Jekyll
 ├── README.md
@@ -18,20 +20,20 @@ docs/
 
 ## 本地预览
 
-在仓库根目录运行：
+在站点根目录（本地为 `docs/`，远程仓库为仓库根目录）运行：
 
 ```bash
-python -m http.server 8000 -d docs
+python -m http.server 8000
 ```
 
 然后打开 <http://localhost:8000/>。
 
 ## 发布到 GitHub Pages
 
-1. 将 `docs/` 目录提交到 GitHub 仓库。
+1. 将站点文件提交到 GitHub 仓库根目录。
 2. 进入仓库 **Settings → Pages**。
 3. **Source** 选择 **Deploy from a branch**。
-4. **Branch** 选择 `main`，**Folder** 选择 `/docs`。
+4. **Branch** 选择 `main`，**Folder** 选择 `/ (root)`。
 5. 保存后等待 GitHub Pages 构建完成。
 
 发布地址一般为：
